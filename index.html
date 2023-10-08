@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Starter Template - Materialize</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body >
+  <nav>
+    <a href="home.html"><img src="{{url_for('static', filename='/Image/logo.png')}}"></a>
+    <div class="nav-links" id="navlinks">
+        
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACTS</a></li>
+            <li><a href="http://localhost/try/login.php">LOGIN</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container">
+             
+    <form action='/predict' method="POST" class="col s12">
+            <label for="inputField"><b>Enter the topic/celebrity: </b></label>
+            <br>
+            <br>
+          <input id="inputField" name='inputField'type="text" class="validate">
+
+      <div class="row center">
+          <button type="submit" class="btn">Predict Probability</button>
+      </div>
+    </form>
+
+    <br>
+    <h4 align="center"><b>{{pred}}</b></h4>
+    <br>
+</div>
+  </body>
+</html>
