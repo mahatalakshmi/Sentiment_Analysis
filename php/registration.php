@@ -47,7 +47,7 @@ if (isset($_SESSION["user"])) {
            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             array_push($errors, "Email is not valid");
            }
-           $allowedDomains = ['gmail.com', 'yahoo.com','outlook.com']; // Add allowed domains here
+           $allowedDomains = ['gmail.com', 'yahoo.com','outlook.com']; 
            $emailDomain = substr(strrchr($email, "@"), 1);
            if (in_array($emailDomain, $allowedDomains)) {
             array_push($errors, "Email domain not allowed");
