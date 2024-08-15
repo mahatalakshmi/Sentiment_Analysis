@@ -1,4 +1,4 @@
-#Overview
+Overview<br>
 This project is a sentiment analysis web application that allows users to analyze the sentiments of people on a given topic. The application fetches recent headlines from Google News using the Google News API, performs sentiment classification using the TextBlob library, and presents the results to the user.
 
 #Features
